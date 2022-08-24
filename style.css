@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.container{
+    margin: 0 5%;
+}
+
+.logo > a > img{
+    width: 40px;
+}
+
+.logo > a > img:hover{
+    animation: rubberBand 1s;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 1px 1px 1px #ccc;
+    background-color: white;
+}
+
+header > div{
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+}
+
+header > div > div{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+header > div > div.logo{
+    justify-content: flex-start;
+    padding: 25px 0;
+}
+
+header > div > div > ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+header > div > div > ul > li{
+    display: flex;
+    justify-content: space-between;
+}
+
+header > div > div > ul > li > a{
+    color: #292929;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    padding: 35px 10px 0 10px;
+}
+
+header > div > div > ul > li > a::after{
+    content: "";
+    width: 0;
+    height: 3%;
+    background-color: #ffbc0d;
+    position: absolute;
+    left: 0;
+    top: 97%;
+}
+
+header > div > div > ul > li > a:hover::after{
+    transition: 0.3s ease-out all;
+    width: 100%;
+}
+
+section{
+    /* height: 100vh; */
+    margin-top: 70px;
+}
+
+#home{
+    padding-top: 100px;
+    text-align: center;
+}
+
+#home img{
+    width: 600px;
+    padding-top: 20px;
+    animation: 2s show-left ease;
+}
+
+#home > .container > div{
+    padding-top: 50px;
+} 
+
+#home > .container > div > h1{
+    font-size: 50px;
+    color: #292929;
+    margin: 0 auto;
+    animation: 1s show-left ease;
+}
+
+#home > .container > div > p{
+    padding-top: 20px;
+    font-size: 16px;
+    color: #6f6f6f;
+    margin: 0 auto;
+    animation: 3s show-left ease;
+}
+
+/*Section Promoções*/
+
+#promocoes{
+    padding-top: 100px;
+}
+
+#promocoes img{
+    width: 30%;
+}
+
+#promocoes > .container > div{
+    display: flex;
+}
+
+#promocoes > .container > div > div{
+    text-align: center;
+    margin: 0 2%;
+    /* border: 1px solid #6f6f6f; */
+    border-radius: 10px;
+}
+
+#promocoes > .container > div > div:hover{
+    background-color: #ffbc0d;
+}
+
+#promocoes > .container > div > div:hover > div{
+    background-color: #DB0006;
+    color: white;
+}
+
+#promocoes > .container > div > div:hover > h1{
+    background-color: white;
+    color: #DB0006;
+    animation: rotateIn 1s;
+}
+
+#promocoes > .container > div > div:hover > img{
+    animation: bounce 1.5s;
+}
+
+#promocoes > .container > div > div > h2{
+    font-weight: normal;
+    padding: 10px 0;
+}
+
+#promocoes > .container > div > div > ul{
+    list-style-type: none;
+    display: flex;
+}
+
+#promocoes > .container > div > div > ul > li{
+    padding: 10px 0;
+    color: #6f6f6f;
+    font-weight: lighter;
+}
+
+#promocoes > .container > div > div > h1{
+    padding: 30px 0;
+    background-color: #DB0006;
+    border-radius: 50%;
+    color: white;
+    width: 33.3%;
+    margin: 20px 33.3%;
+    font-weight: bold;
+}
+
+#promocoes > .container > div > div > div{
+    margin: 30px 33.3%;
+    width: 33.3%;
+    padding: 10px 15px;
+    background-color: #ffbc0d;
+    color: white;
+    border-radius: 5px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+/*Section nutricional*/
+
+#nutricional{
+    padding-top: 100px;
+}
+
+#nutricional > .container > h2{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#nutricional > .container > table{
+    width: 50%;
+    margin: 0 25%;
+}
+
+#nutricional > .container > table > thead{
+    font-weight: bold;
+}
+
+
+/*Alergia*/
+#alergia{
+    padding-top: 100px;
+}
+
+#alergia > .container > h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#alergia > .container > h3{
+    text-align: center;
+    font-weight: normal;
+}
+
+#alergia > .container > table{
+    width: 50%;
+    margin: 20px 25% 30px 25%;
+}
+
+#alergia > .container > table > thead{
+    font-weight: bold;
+}
+
+#alergia > .container > p{
+    width: 50%;
+    margin: 0 25%;
+    padding: 10px 0;
+    color: #6f6f6f;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+}
+
+footer > .logo{
+    padding: 25px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+
+    .logo > img{
+        width: 40px;
+    }
+
+    header > div > div.logo{
+        justify-content: flex-start;
+        padding: 20px 0;
+    }
+    
+    header > div > div > ul > li > a{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 1075px){
+
+    #home{
+        padding-top: 40px;
+    }
+
+    .logo > img{
+        width: 35px;
+    }
+
+    header > div > div > ul > li > a{
+        font-size: 12px;
+    }
+
+    #home > .container > div > h1{
+        font-size: 40px;
+    }
+
+    #home > .container > div > p{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 945px){
+
+    #home{
+        padding-top: 30px;
+    }
+
+    .logo > img{
+        width: 30px;
+    }
+
+    header > div > div.logo{
+        justify-content: flex-start;
+        padding: 15px 0;
+    }
+
+    header > div > div > ul > li > a{
+        font-size: 11px;
+        padding: 25px 10px 0 10px;
+    }
+
+    #home > .container > div > h1{
+        font-size: 35px;
+    }
+
+    #home > .container > div > p{
+        font-size: 14px;
+    }
+
+    #promocoes > .container > div{
+        flex-direction: column;
+    }
+
+    #promocoes > .container > div > div{
+        border: 1px solid #ccc;
+        margin: 0 10% 30px 10%;
+    }
+
+    #promocoes > .container > div > div > ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #promocoes > .container > div > div > ul > li{
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 881px){
+
+    #home{
+        padding-top: 20px;
+    }
+
+    .logo > img{
+        width: 25px;
+    }
+
+    header > div > div > ul > li > a{
+        font-size: 10px;
+        padding: 25px 10px 0 10px;
+    }
+
+    #home > .container > div > h1{
+        font-size: 30px;
+    }
+
+    #home > .container > div > p{
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 630px){
+
+    #home img{
+        width: 500px;
+        padding-top: 20px;
+    }
+
+    .logo > img{
+        width: 25px;
+    }
+
+    header > div > div > ul > li > a{
+        font-size: 9px;
+        padding: 20px 10px 0 10px;
+    }
+
+    #home > .container > div > h1{
+        font-size: 30px;
+    }
+
+    #home > .container > div > p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 560px){
+
+    #home img{
+        width: 400px;
+        padding-top: 20px;
+    }
+
+}
+
+@keyframes show-left{
+    0%{
+        margin-left: -300%;
+    }
+
+    100%{
+        margin-left: 0;
+    }
+}
